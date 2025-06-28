@@ -6,7 +6,12 @@
   "scripts": {
     "start": "node simple-start.js",
     "square": "node import-square-fixed.js",
-    "generate": "node generate-shapes.js"
+    "check": "node check-uploaded-square.js",
+    "generate": "node generate-shapes.js",
+    "cad": "node natural-language-cad.js",
+    "ai": "node ai-designer.js",
+    "anything": "node truly-ai-cad.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "axios": "^1.6.0",
