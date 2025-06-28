@@ -1,17 +1,13 @@
-// Check what's in our document after uploading the STL
+// Check what's in any OnShape document (pass docId as argument)
 const axios = require('axios');
 
 // Your API keys
 const ACCESS_KEY = 'QlSdGFPgKpR0s0s9lMQFWdw3';
 const SECRET_KEY = 'WLLVf9rJanAnpDQ88l9nmvYsplZOTgHHx4Yplt1lgvYv0CPL';
 
-async function checkUploadedSquare() {
+async function checkDocument(docId) {
     try {
-        console.log('🔍 Checking what\'s in our document after upload...\n');
-
-        // Document ID from our last successful upload
-        const docId = 'b72189afce5b8394d5628b93';
-        const workspaceId = 'c9dcbe2b1a3ce8b18f6de373'; // This needs to be the actual workspace ID
+        console.log(`🔍 Checking document: ${docId}\n`);
 
         // Authentication
         const credentials = Buffer.from(`${ACCESS_KEY}:${SECRET_KEY}`).toString('base64');
@@ -36,9 +32,10 @@ async function checkUploadedSquare() {
             console.log(`  ${index + 1}. ${element.name} (Type: ${element.elementType}, ID: ${element.id})`);
         });
 
-        // Check the Part Studio specifically
-        const partStudio = elementsResponse.data.find(el => el.elementType === 'PARTSTUDIO');
-        if (partStudio) {
+        // Check each Part Studio
+        const partStudios = elementsResponse.data.filter(el => el.elementType === 'PARTSTUDIO');
+        
+        for (const partStudio of partStudios) {
             console.log(`\n🔧 Exploring Part Studio: "${partStudio.name}"`);
             
             const featuresResponse = await axios.get(
@@ -82,5 +79,21 @@ async function checkUploadedSquare() {
     }
 }
 
+// Get document ID from command line argument
+const docId = process.argv[2];
+
+if (!docId) {
+    console.log('❌ Please provide a document ID!');
+    console.log('');
+    console.log('Usage:');
+    console.log('  node check-uploaded-square.js [DOCUMENT_ID]');
+    console.log('');
+    console.log('Example:');
+    console.log('  node check-uploaded-square.js b72189afce5b8394d5628b93');
+    console.log('');
+    console.log('💡 Run "npm run square" first to create a document, then use that ID here.');
+    process.exit(1);
+}
+
 // Run it
-checkUploadedSquare(); 
+checkDocument(docId); 

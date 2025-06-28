@@ -151,8 +151,11 @@ endsolid square`;
         );
 
         console.log('✅ STL imported into Part Studio!');
-        console.log(`\n🎉 SUCCESS! Your square has been imported!`);
+        console.log(`\n🎉 SUCCESS! Your 3D square is ready!`);
         console.log(`🌐 View it here: https://cad.onshape.com/documents/${doc.id}`);
+        console.log(`\n📋 Document ID: ${doc.id}`);
+        console.log(`💡 To check this document later, run:`);
+        console.log(`   node check-uploaded-square.js ${doc.id}`);
         
         return doc;
 

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node simple-start.js",
     "square": "node import-square-fixed.js",
-    "check": "node check-uploaded-square.js"
+    "generate": "node generate-shapes.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
