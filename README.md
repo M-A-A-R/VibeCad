@@ -1,5 +1,7 @@
 1st Place VCNest Hackathon 6/28/25
 
+This is a basic example for one shoting simple designs
+
 # OnShape API Scripts
 
 Simple Node.js scripts for OnShape CAD operations using the OnShape REST API.
@@ -36,7 +38,7 @@ npm run square
 node check-uploaded-square.js [DOCUMENT_ID]
 ```
 
-## 📋 Example Workflow
+##  Example Workflow
 
 ```bash
 # 1. Create a square
@@ -47,12 +49,9 @@ npm run square
 node check-uploaded-square.js abc123def456
 ```
 
-##  Success!
+##  Working:
 
-The **square import** creates a real 3D part in OnShape that you can view, modify, and use in assemblies!
+The **square import** creates a real 3D part in OnShape that you can view, modify, and use in assemblies
 
-##  What to try next
-
-- Create other shapes (circles, triangles, etc.)
-- Explore assemblies and drawings
-- Add parametric features 
+## Example
+Prompt: 'Humanoid Robot'
