@@ -1,6 +1,9 @@
 1st Place VCNest Hackathon 6/28/25
-
 This is a basic example for one shoting simple designs. It works with onShape and in order to use for free you need an academic email. 
+
+## Example
+Prompt: 'Humanoid Robot'
+<img width="1775" height="873" alt="Image" src="https://github.com/user-attachments/assets/74964e30-6cc0-4db2-b31b-2fc8708a6805" />
 
 # OnShape API Scripts
 
@@ -53,6 +56,4 @@ node check-uploaded-square.js abc123def456
 
 The **square import** creates a real 3D part in OnShape that you can view, modify, and use in assemblies
 
-## Example
-Prompt: 'Humanoid Robot'
-<img width="1775" height="873" alt="Image" src="https://github.com/user-attachments/assets/74964e30-6cc0-4db2-b31b-2fc8708a6805" />
+
