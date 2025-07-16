@@ -4,13 +4,13 @@
 
 Simple Node.js scripts for OnShape CAD operations using the OnShape REST API.
 
-## 🚀 What Works
+##  What Works
 
-✅ **Create documents** - `simple-start.js`  
-✅ **Import 3D shapes** - `import-square-fixed.js` (creates a 20mm×20mm×2mm square)  
-✅ **Check documents** - `check-uploaded-square.js [DOCUMENT_ID]` (explore any document)
+ **Create documents** - `simple-start.js`  
+ **Import 3D shapes** - `import-square-fixed.js` (creates a 20mm×20mm×2mm square)  
+ **Check documents** - `check-uploaded-square.js [DOCUMENT_ID]` (explore any document)
 
-## 📦 Setup
+##  Setup
 
 1. **Install dependencies:**
    ```bash
@@ -23,7 +23,7 @@ Simple Node.js scripts for OnShape CAD operations using the OnShape REST API.
    - Check: `OAuth2Read` and `OAuth2Write`
    - Add your keys to the scripts (replace the placeholder values)
 
-## 🎯 Usage
+##  Usage
 
 ```bash
 # Create a simple document
@@ -47,11 +47,11 @@ npm run square
 node check-uploaded-square.js abc123def456
 ```
 
-## 🎉 Success!
+##  Success!
 
 The **square import** creates a real 3D part in OnShape that you can view, modify, and use in assemblies!
 
-## 🔑 Next Steps
+##  What to try next
 
 - Create other shapes (circles, triangles, etc.)
 - Explore assemblies and drawings
