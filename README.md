@@ -1,3 +1,5 @@
+1st Place VCNest Hackathon 6/28/25
+
 # OnShape API Scripts
 
 Simple Node.js scripts for OnShape CAD operations using the OnShape REST API.
