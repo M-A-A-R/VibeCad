@@ -55,3 +55,4 @@ The **square import** creates a real 3D part in OnShape that you can view, modif
 
 ## Example
 Prompt: 'Humanoid Robot'
+<img width="1775" height="873" alt="Image" src="https://github.com/user-attachments/assets/74964e30-6cc0-4db2-b31b-2fc8708a6805" />
