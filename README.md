@@ -1,5 +1,5 @@
 1st Place VCNest Hackathon 6/28/25
-This is a basic example for one shoting simple designs. It works with onShape and in order to use for free you need an academic email. 
+This is a basic example for one shoting simple designs. It works with onShape and in order to use it for free you need an academic email. 
 
 ## Example
 Prompt: 'Humanoid Robot'
